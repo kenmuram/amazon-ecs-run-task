@@ -1,0 +1,31 @@
+{
+  "name": "amazon-ecs-run-task",
+  "version": "1.0.0",
+  "description": "Renew task definition for Amazon ECS Task Schedule.",
+  "main": "index.js",
+  "scripts": {
+    "package": "ncc build index.js -o dist",
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenmuram/amazon-ecs-run-task.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kenmuram/amazon-ecs-run-task/issues"
+  },
+  "homepage": "https://github.com/kenmuram/amazon-ecs-run-task#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.5",
+    "aws-sdk": "^2.757.0",
+    "yaml": "^1.10.0"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.24.0",
+    "eslint": "^7.4.0",
+    "jest": "^26.1.0"
+  }
+}

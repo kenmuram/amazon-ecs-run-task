@@ -1,0 +1,27 @@
+name: 'Amazon ECS run task'
+description: 'Amazon ECS run task'
+branding:
+  icon: 'cloud'
+  color: 'orange'
+inputs:
+  cluster:
+    description: 'ECS cluster'
+    required: true
+  service:
+    description: 'ECS service'
+    required: true
+  count:
+    description: 'task count'
+    required: true
+  task-definition:
+    description: 'ECS task definition'
+    required: true
+  wait-for-finish:
+    description: 'wait for task to stopped status'
+    required: true
+  wait-for-minutes:
+    description: 'wait time'
+    required: false
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
