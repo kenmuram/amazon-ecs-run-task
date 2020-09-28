@@ -1,4 +1,4 @@
-## Amazon ECS Run Task for GitHub Actions
+## Amazon ECS "Run Task" action for GitHub Actions
 
 Runs an Amazon ECS task on ECS cluster.
 
